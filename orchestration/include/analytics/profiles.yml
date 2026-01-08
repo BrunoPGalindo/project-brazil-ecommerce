@@ -1,0 +1,12 @@
+analytics: 
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: host.docker.internal 
+      user: postgres
+      password: aabb224466
+      port: 5432
+      dbname: olist_dw
+      schema: dbt_analytics # Schema onde o dbt vai criar as tabelas
+      threads: 1
